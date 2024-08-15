@@ -1,14 +1,14 @@
 class IO():
-    def getStr():
+    def getStr(self):
         return input()
     
-    def getInt():
+    def getInt(self):
         return int(input())
     
-    def getStrList():
+    def getStrList(self):
         return input().split(' ')
 
-    def getIntList():
+    def getIntList(self):
         return [int(x) for x in input().split(' ')]
     
 io = IO()
