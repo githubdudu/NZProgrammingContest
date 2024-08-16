@@ -34,16 +34,16 @@ I wrote a piece of IO.
 ```python
 class IO():
     def getStr(self):
-        return input()
+        return input().strip()
     
     def getInt(self):
         return int(input())
     
     def getStrList(self):
-        return input().split(' ')
+        return self.getStr().split(' ')
 
     def getIntList(self):
-        return [int(x) for x in input().split(' ')]
+        return [int(x) for x in self.getStrList()]
     
 io = IO()
 ```
